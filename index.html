@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/blood.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section>
+            <h1>Astma Allergi</h1>
+            <h2>Mærkning</h2>
+          </section>
+          <section>
+            <img data-src="gfx/1.png" alt="" />
+          </section>
+          <section>
+            <img data-src="gfx/2.png" alt="" />
+          </section>
+          <section>
+            <img data-src="gfx/3.png" alt="" />
+          </section>
+          <section>
+            <img data-src="gfx/4.png" alt="" />
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>Tech-stack</h1>
+          </section>
+          <section>
+            <ul>
+              <li>NextJS</li>
+              <li class="fragment">Tailwind</li>
+              <li class="fragment">TypeScript</li>
+              <li class="fragment">Vercel</li>
+              <li class="fragment">Next-intl</li>
+              <li class="fragment">Tailwind</li>
+              <li class="fragment">DatoCMS</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>
+              <code>NextJS</code>
+            </h1>
+            <p>Fullstack Meta-framework baseret på React</p>
+          </section>
+          <section>
+            <h2>Hvad kan det / Hvorfor?</h2>
+
+            <ol class="striped">
+              <li>Caching, SSG, SRR</li>
+              <li class="fragment">
+                De endpoints vi fik udstillet af 3. part var alt for tunge
+                <br /><small>(eks 0.8mb og 1mb) og for langsomme</small>
+                <ul>
+                  <li class="fragment">
+                    Med Next kunne vi cache requests på serveren <br /><small
+                      >(vi cacher 2 uger)</small
+                    >
+                  </li>
+                  <li class="fragment">
+                    Og så spørge ind i cachen hvis vi skulle have et subset af
+                    data
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
